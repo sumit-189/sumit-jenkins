@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('git-pull') {
             steps {
-                echo "code-build successfully"
+                git branch: 'main', url: 'https://github.com/sumit-189/student-ui-app.git'
             }
         }
         stage('built-stage') {
