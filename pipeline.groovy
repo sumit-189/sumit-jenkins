@@ -9,7 +9,7 @@ pipeline {
         }
         stage('built-stage') {
             steps {
-                echo "code-build successfully"
+                sh '/opt/maven/bin/mvn clean package '
             }
         }
         stage('test-stage') {
