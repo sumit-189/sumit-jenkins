@@ -9,7 +9,7 @@ pipeline {
         }
         stage('built-stage') {
             steps {
-                sh '/opt/maven/bin/my-app/mvn clean package '
+                sh '/opt/maven/bin/ mvn clean package '
             }
         }
         stage('test-stage') {
