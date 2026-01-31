@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('git-pull') {
+            steps {
+                echo "code-build successfully"
+            }
+        }
+        stage('built-stage') {
+            steps {
+                echo "code-build successfully"
+            }
+        }
+        stage('test-stage') {
+            steps {
+                echo 'code-test successfully'
+            }
+        }
+        stage('deploy-stage') {
+            steps {
+                echo 'code-deploy successfully'
+            }
+        }
+    }
+}
