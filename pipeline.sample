@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('git-pull') {
             steps {
-                git branch: 'main', url: 'https://github.com/sumit-189/Sumit.git'
+                echo "code-build successfully"
             }
         }
         stage('built-stage') {
