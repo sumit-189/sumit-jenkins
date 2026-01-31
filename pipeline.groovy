@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('git-pull') {
             steps {
-                git branch: 'main', url: 'https://github.com/sumit-189/student-ui-app.git'
+                git branch: 'main', url: 'https://github.com/Anilbamnote/student-ui-app.git'
             }
         }
         stage('built-stage') {
