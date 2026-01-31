@@ -15,7 +15,7 @@ pipeline {
         }
         stage('test-stage') {
             steps {
-                sh '''mvn sonar:sonar \\
+                sh '''mvn clean verify  sonar:sonar \\
                  -Dsonar.projectKey=my-project \\
                   -Dsonar.host.url=http://35.94.233.163:9000 \\
                   -Dsonar.login=a30da74f07576363909e98591c0311f998ff42cb'''
